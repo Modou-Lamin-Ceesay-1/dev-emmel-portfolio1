@@ -216,6 +216,9 @@
 
                 <form action="https://formsubmit.co/modoulaminscisay@gmail.com" method="POST" class="cta-form">
                     <label for="name"></label>
+
+                    <input type="hidden" name="_captcha" value="false">
+
                     <input  name="name" type="text" placeholder="NAME" required>
 
                     <br />
@@ -228,6 +231,9 @@
                     <label id="message" for="message"></label>
                     <br />
                     <textarea name="subject" placeholder="MESSAGE" id="input-message" required></textarea>
+
+                    <input type="hidden" value="https://dev-emmel-portfolio1.vercel.app/">
+
 
                     <div class="cta-button">
                         <button class="cta-btn" type="submit">SEND MESSAGE</button>
@@ -279,13 +285,6 @@
                 }
             });
         });
-
-        // Form submission
-        document.querySelector('.cta-form').addEventListener('submit', function(e) {
-            e.preventDefault();
-            alert('Thank you for your interest! We\'ll contact you within 24 hours.');
-        });
-
     </script>
 </body>
 </html>
