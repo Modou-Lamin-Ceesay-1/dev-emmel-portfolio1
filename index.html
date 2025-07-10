@@ -100,7 +100,7 @@
             <div class="project-images-wrapper">
                 <div id="project-props">
 
-                    <h4>Cat's World website</h4>
+                    <h4>Cat's World website (deployed)</h4>
                     <p class="gap">HTML    CSS</p>
                     <img class="project-images-item" src="./images/Cats World Web.png" alt="cats-world-image">
 
@@ -126,7 +126,7 @@
             <div class="project-images-wrapper">
                 <div id="project-props">
 
-                    <h4>Insure Landing page</h4>
+                    <h4>Insure Landing page (deployed)</h4>
                     <p class="gap">HTML CSS</p>
                     <img class="project-images-item" src="./images/Insure Landing Page.png" alt="insure-landing-page-image">
 
@@ -178,7 +178,7 @@
             <div class="project-images-wrapper">
                 <div id="project-props">
 
-                    <h4>Boomark Landing Page</h4>
+                    <h4>Bookmark Landing Page (deployed)</h4>
                     <p class="gap">HTML    CSS    Javascript</p>
                     <img class="project-images-item" src="./images/bookmark landing page.png" alt="restaurant-image">
 
@@ -214,10 +214,12 @@
                     <a class="my-telephone" href="tel:+2205296007">Call (+220) 529-6007</a>
                 </div>
 
-                <form action="https://formsubmit.co/b7354c0f67c835870bac136583cb2f63"  method="POST" method="POST" class="cta-form">
-
+                <form action="https://formsubmit.co/modoulaminscisay@gmail.com" method="POST" class="cta-form">
                     <label for="name"></label>
-                    <input name="name" type="text" placeholder="NAME" required>
+
+                    <input type="hidden" name="_captcha" value="false">
+
+                    <input  name="name" type="text" placeholder="NAME" required>
 
                     <br />
 
@@ -229,6 +231,9 @@
                     <label id="message" for="message"></label>
                     <br />
                     <textarea name="subject" placeholder="MESSAGE" id="input-message" required></textarea>
+
+                    <input type="hidden" value="https://dev-emmel-portfolio1.vercel.app/">
+
 
                     <div class="cta-button">
                         <button class="cta-btn" type="submit">SEND MESSAGE</button>
@@ -280,13 +285,6 @@
                 }
             });
         });
-
-        // Form submission
-        document.querySelector('.cta-form').addEventListener('submit', function(e) {
-            e.preventDefault();
-            alert('Thank you for your interest! We\'ll contact you within 24 hours.');
-        });
-
     </script>
 </body>
 </html>
